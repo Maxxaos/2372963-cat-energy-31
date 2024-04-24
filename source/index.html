@@ -38,8 +38,14 @@
       <h1 class="hero__title">Функциональное питание для котов</h1>
       <p class="hero__slogan">Занялся собой? Займись котом!</p>
       <picture>
-        <source type="image/png" media="(min-width: 1440px)" srcset="im">
-        <img class="hero__img" src="../images/" width="280" height="270" alt="Питание для котов">
+        <!-- webp -->
+        <source type="image/webp" media="(min-width: 1440px)" srcset="images/hero/index-can-desktop@1x.webp 1x, images/hero/index-can-desktop@2x.webp 2x" width="552" height="499">
+        <source type="image/webp" media="(min-width: 768px)" srcset="images/hero/index-can-tablet@1x.webp 1x, images/hero/index-can-tablet@2x.webp 2x" width="709" height="609">
+        <source type="image/webp" srcset="images/hero/index-can-mobile@1x.webp 1x, images/hero/index-can-mobile@2x.webp 2x" width="280" height="280">
+        <!-- png -->
+        <source type="image/png" media="(min-width: 1440px)" srcset="images/hero/index-can-desktop@1x.png 1x, images/hero/index-can-desktop@2x.png 2x" width="552" height="499">
+        <source type="image/png" media="(min-width: 768px)" srcset="images/hero/index-can-tablet@1x.png 1x, images/hero/index-can-tablet@2x.png 2x" width="709" height="609">
+        <img class="hero__img" src="images/hero/index-can-mobile@1x.png" srcset="images/hero/index-can-mobile@2x.png" width="280" height="270" alt="Питание для котов">
       </picture>
 
       <a class="button hero__button" href="#">Подобрать программу</a>
@@ -104,11 +110,28 @@
         <span class="result__cost-price">15000 рублей</span>
       </div>
       <div class="result__slider slider">
-        <img class="slider__before-img" src="#" width="500" height="500" alt="Борис до">
+        <!-- before -->
+        <picture>
+          <!-- webp -->
+          <source type="image/webp" media="(min-width: 768px)" srcset="images/slider/cat-before-tablet@1x.webp 1x, images/slider/cat-before-tablet@2x.webp 2x" width="560" height="512">
+          <source type="image/webp" srcset="images/slider/cat-before-mobile@1x.webp 1x, images/slider/cat-before-mobile@2x.webp 2x" width="280" height="256">
+          <!-- png -->
+          <source type="image/png" media="(min-width: 768px)" srcset="images/slider/cat-before-tablet@1x.png 1x, images/slider/cat-before-tablet@2x.png 2x" width="560" height="512">
+          <img class="slider__before-img" src="images/slider/cat-before-mobile@1x.png" srcset="images/slider/cat-before-mobile@2x.png" width="280" height="256" alt="Борис до">
+        </picture>
+        <!-- before -->
         <button class="slider__button" type="button">
-          <span class="visually-hidden">svg</span>
+          <span class="visually-hidden">1</span>
         </button>
-        <img class="slider__after-img" src="#" width="500" height="500" alt="Борис после">
+        <!-- after -->
+        <picture>
+          <!-- webp -->
+          <source type="image/webp" media="(min-width: 768px)" srcset="images/slider/cat-after-tablet@1x.webp 1x, images/slider/cat-after-tablet@2x.webp 2x" width="560" height="512">
+          <source type="image/webp" srcset="images/slider/cat-after-mobile@1x.webp 1x, images/slider/cat-after-mobile@2x.webp 2x" width="280" height="256">
+          <!-- png -->
+          <source type="image/png" media="(min-width: 768px)" srcset="images/slider/cat-after-tablet@1x.png 1x, images/slider/cat-after-tablet@2x.png 2x" width="560" height="512">
+          <img class="slider__after-img" src="images/slider/cat-after-mobile@1x.png" srcset="images/slider/cat-after-mobile@2x.png" width="280" height="256" alt="Борис после">
+        </picture>
       </div>
     </section>
 
