@@ -5,15 +5,13 @@
   <meta charset="UTF-8">
   <title>Cat energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-
   <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
   <link rel="manifest" href="/source/manifest.webmanifest">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon.ico">
-
-  <link rel="stylesheet" href="styles/styles.scss">
+  <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -22,7 +20,7 @@
     <div class="header__container">
       <nav class="navigation">
         <a class="navigation__logo" href="#"><img class="navigation__logo-image" width="50" height="60" src="#" alt="Магазин Кэт Энерджи">Лого</a>
-        <ul class="navigation__list">
+        <ul class="navigation__list list-reset">
           <li class="navigation__item ">
             <a class="navigation__link" href="index.html">Главная</a>
           </li>
@@ -45,7 +43,7 @@
       <h1 class="products__title">
         Каталог продукции
       </h1>
-      <ul class="products__list card">
+      <ul class="products__list card list-reset">
         <li class="card__item">
           <a class="card__link" href="#">
             <picture>
@@ -58,7 +56,7 @@
             </picture>
           </a>
           <a class="card__title" href="#">Cat Energy PRO 500 г</a>
-          <ul class="card__characteristic">
+          <ul class="card__characteristic list-reset">
             <li class="card__features">
               <p class="card__specific">масса</p>
               <p class="card__value">500 г</p>
@@ -86,7 +84,7 @@
             </picture>
           </a>
           <a class="card__title" href="#">Cat Energy PRO 1000 г</a>
-          <ul class="card__characteristic">
+          <ul class="card__characteristic list-reset">
             <li class="card__features">
               <p class="card__specific">масса</p>
               <p class="card__value">1000 г</p>
@@ -114,7 +112,7 @@
             </picture>
           </a>
           <a class="card__title" href="#">Cat Energy PRO 500 г</a>
-          <ul class="card__characteristic">
+          <ul class="card__characteristic list-reset">
             <li class="card__features">
               <p class="card__specific">масса</p>
               <p class="card__value">500 г</p>
@@ -142,7 +140,7 @@
             </picture>
           </a>
           <a class="card__title" href="#">Cat Energy PRO 1000 г</a>
-          <ul class="card__characteristic">
+          <ul class="card__characteristic list-reset">
             <li class="card__features">
               <p class="card__specific">масса</p>
               <p class="card__value">1000 г</p>
@@ -170,7 +168,7 @@
             </picture>
           </a>
           <a class="card__title" href="#">Cat Energy SLIM 500 г</a>
-          <ul class="card__characteristic">
+          <ul class="card__characteristic list-reset">
             <li class="card__features">
               <p class="card__specific">масса</p>
               <p class="card__value">500 г</p>
@@ -198,7 +196,7 @@
             </picture>
           </a>
           <a class="card__title" href="#">Cat Energy SLIM 1000 г</a>
-          <ul class="card__characteristic">
+          <ul class="card__characteristic list-reset">
             <li class="card__features">
               <p class="card__specific">масса</p>
               <p class="card__value">1000 г</p>
@@ -226,7 +224,7 @@
             </picture>
           </a>
           <a class="card__title" href="#">Cat Energy SLIM 500 г</a>
-          <ul class="card__characteristic">
+          <ul class="card__characteristic list-reset">
             <li class="card__features">
               <p class="card__specific">масса</p>
               <p class="card__value">500 г</p>
@@ -243,16 +241,16 @@
           <a class="card__button" href="#">заказать</a>
         </li>
         <li class="card__item">
-          <h2 class="card__title">Показать еще 100500 товаров</h2>
-          <p class="card-desc">На самом деле вкусов гораздо больше!</p>
-          <a class="card__button button-showall button" href="#">Показать все</a>
+          <h2 class="card__title card__title--more">Показать еще 100500 товаров</h2>
+          <p class="card__desc">На самом деле вкусов гораздо больше!</p>
+          <a class="card__button card__button--more" href="#">Показать все</a>
         </li>
       </ul>
     </section>
 
     <section class="products-add">
       <h2 class="products-add__title">Дополнительные товары</h2>
-      <ul class="products-add__list">
+      <ul class="products-add__list list-reset">
         <li class="products-add__item">
           <h3 class="products-add__name">Сахарозаменитель</h3>
           <p class="products-add__value">1 упаковка (100 г)</p>
@@ -305,7 +303,7 @@
     <p class="contacts__slogan">приглашаем к сотрудничеству дилеров!</p>
     <p class="contacts__adress">ул. Большая
       Конюшенная, д. 19/8</p>
-    <p class="contacts__adress-city">Санкт-Петербург</p>
+    <p class="contacts__city">Санкт-Петербург</p>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3018527812441!2d30.321759939128697!3d59.93871783731759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f6df7d3481%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sru!2sru!4v1713201377084!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
 
@@ -313,7 +311,7 @@
     <a class="footer__logo" href="#">
       <img class="footer__logo-img" width="100" height="60" src="#" alt="Магазин Кэт Энерджи">
     </a>
-    <ul class="footer__list">
+    <ul class="footer__list list-reset">
       <li class="footer__item">
         <a class="footer__link footer__link--vk" href="#"><span class="visually-hidden">Мы в контакте</span>
         </a>
