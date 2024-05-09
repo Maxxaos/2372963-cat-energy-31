@@ -18,28 +18,30 @@
 <body class="page__body">
   <header class="header navigation">
     <nav class="navigation">
-      <a class="navigation__logo logo" href="index.html">
-        <picture>
-          <source media="(1440px)" srcset="images/logo/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
-          <source media="(768px)" srcset="images/logo/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
-          <img class="logo__image" src="images/logo/logo-mobile.svg" width="33" height="38" alt="Логотип магазина Cat Energy">
-        </picture>
-        <img class="logo__text" src="images/logo/logo-text.svg" width="101" height="20" alt="Наименование магазина">
-      </a>
+      <div class="navigation__wrapper">
+        <a class="navigation__logo" href="#">
+          <picture>
+            <source media="(1440px)" srcset="images/logo/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
+            <source media="(768px)" srcset="images/logo/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
+            <img class="logo__image" src="images/logo/logo-mobile.svg" width="33" height="38" alt="Логотип магазина Cat Energy">
+          </picture>
+          <img class="logo__text" src="images/logo/logo-text.svg" width="101" height="20" alt="Наименование магазина">
+        </a>
+        <button class="navigation__toggle navigation__toggle--close" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
       <ul class="navigation__list list-reset">
         <li class="navigation__item ">
           <a class="navigation__link" href="index.html">Главная</a>
         </li>
         <li class="navigation__item navigation__item--current">
-          <a href="catalog.html">Каталог продукции</a>
+          <a class="navigation__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="#">Подбор программы</a>
         </li>
       </ul>
-      <button class="navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
     </nav>
   </header>
 
@@ -260,10 +262,10 @@
           </ul>
           <a class="card__button" href="#">заказать</a>
         </li>
-        <li class="products__item card">
-          <h2 class="card__link card__link--more">Показать еще 100500 товаров</h2>
-          <p class="card__desc">На самом деле вкусов гораздо больше!</p>
-          <a class="card__button card__button--more" href="#">Показать все</a>
+        <li class="products__item card__more">
+          <h2 class="card__more-link">Показать еще 100500 товаров</h2>
+          <p class="card__more-desc">На самом деле вкусов гораздо больше!</p>
+          <a class="card__more-button" href="#">Показать все</a>
         </li>
       </ul>
     </section>
@@ -316,20 +318,19 @@
         </button>
       </form>
     </section>
+    <section class="contacts">
+      <h3 class="visually-hidden">Контакты</h3>
+      <p class="contacts__slogan">приглашаем к сотрудничеству дилеров!</p>
+      <p class="contacts__adress">ул. Большая
+        Конюшенная, д. 19/8</p>
+      <p class="contacts__city">Санкт-Петербург</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3018527812441!2d30.321759939128697!3d59.93871783731759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f6df7d3481%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sru!2sru!4v1713201377084!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
   </main>
-
-  <section class="contacts">
-    <h3 class="visually-hidden">Контакты</h3>
-    <p class="contacts__slogan">приглашаем к сотрудничеству дилеров!</p>
-    <p class="contacts__adress">ул. Большая
-      Конюшенная, д. 19/8</p>
-    <p class="contacts__city">Санкт-Петербург</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3018527812441!2d30.321759939128697!3d59.93871783731759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f6df7d3481%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sru!2sru!4v1713201377084!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </section>
 
   <footer class="footer">
     <a class="footer__logo logo" href="#">
-      <img class="logo__text" width="128" height="24" src="images/logo/logo-text.svg" alt="Наименование магазина">
+      <img class="logo__text--footer" width="128" height="24" src="images/logo/logo-text.svg" alt="Наименование магазина">
     </a>
     <ul class="footer__list list-reset">
       <li class="footer__item">
@@ -347,7 +348,6 @@
     </ul>
     <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
       <span class="copyright__text">HTML Academy</span>
-      <img class="copyright__img" src="img" width="50" height="50" alt="">
     </a>
   </footer>
 </body>

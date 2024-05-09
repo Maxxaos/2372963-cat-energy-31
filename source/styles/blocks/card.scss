@@ -30,6 +30,20 @@
   padding: 10px 109px;
 }
 
+.card__more {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-image: url("../../icons/icon-plus.svg");
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position-x: center;
+  background-position-y: 25px;
+}
+// .card__link--more{
+//   background-image:url("../")
+// }
+
 .card__title--more {
   color: #111111;
 }
@@ -41,7 +55,16 @@
   color: #444444;
 }
 
-.card__button--more {
-  color: #444444;
+.card__more-link {
+  margin-top: 78px;
+}
+
+.card__more-button {
   background-color: #f2f2f2;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 10px 95px;
+  color: $basic-text-gray;
 }

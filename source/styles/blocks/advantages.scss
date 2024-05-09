@@ -5,7 +5,51 @@
   color: #000000;
 }
 
+.advantages-list {
+  display: flex;
+  flex-flow: wrap;
+}
+
 .advantages__item {
   font-family: $primary-font;
   color: #444444;
+  display: flex;
+  align-items: center;
+  flex-flow: nowrap;
+  gap: 10px;
+}
+
+.advantages__item::before {
+  content: "";
+  background-color: $basic-green;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+.advantages__item--healthy::before {
+  content: "";
+  background-image: url("../../icons/advantages/icon-leaf.svg");
+  background-size: 30px 32px;
+}
+
+.advantages__item--powder::before {
+  content: "";
+  background-image: url("../../icons/advantages/icon-powder.svg");
+  background-size: 30px 32px;
+}
+
+.advantages__item--feed::before {
+  content: "";
+  background-image: url("../../icons/advantages/icon-eat.svg");
+  background-size: 30px 32px;
+}
+
+.advantages__item--fast::before {
+  content: "";
+  background-image: url("../../icons/advantages/icon-clock.svg");
+  background-size: 30px 32px;
 }

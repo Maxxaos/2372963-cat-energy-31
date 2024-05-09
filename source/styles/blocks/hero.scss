@@ -1,5 +1,5 @@
 .hero {
-  background-color: #008000;
+  background-color: $basic-white;
 }
 
 .hero__title {
@@ -7,14 +7,14 @@
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $basic-white;
 }
 
 .hero__slogan {
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  color: $basic-white;
 }
 
 // .hero__img {
@@ -25,4 +25,8 @@
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
+  color: $basic-white;
+  text-transform: uppercase;
+  background-color: $basic-green;
+  padding: 10px 44px;
 }

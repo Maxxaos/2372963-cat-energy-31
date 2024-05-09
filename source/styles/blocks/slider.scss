@@ -1,0 +1,42 @@
+// .slider {
+//   position: relative;
+// }
+
+.slider__button {
+  cursor: pointer;
+  background-color: #666666;
+  border: none;
+  width: 4px;
+  height: 256px;
+  padding: 0;
+  display: block;
+  border-radius: 2px;
+  position: absolute;
+  left: 50%;
+}
+
+.slider__button::before {
+  content: "";
+  background-color: #ffffff;
+  background-size: 40px 40px;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 106px;
+  left: -20px;
+}
+
+.slider__button::after {
+  content: "";
+  background-color: #666666;
+  width: 24px;
+  height: 18px;
+  position: absolute;
+  top: 119px;
+  left: -10px;
+  mask-image: url("../../icons/icon-slider.svg");
+  mask-size: 24px 18px;
+  mask-repeat: no-repeat;
+}

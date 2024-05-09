@@ -1,0 +1,23 @@
+.copyright {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.copyright__text {
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: $basic-text-gray;
+}
+
+.copyright::after {
+  content: "";
+  background-image: url("../../icons/logo-html.svg");
+  background-size: 27px 34px;
+  width: 27px;
+  height: 34px;
+  display: block;
+}
