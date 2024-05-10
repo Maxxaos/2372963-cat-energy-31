@@ -1,12 +1,32 @@
 .promo {
   background-color: rgba(104, 183, 56, 0.85);
-  background-repeat: no-repeat;
-  background-image: 78px 80px;
+  padding: 187px 60px 43px;
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  position: relative;
 }
+
 
 .promo__desc {
   font-family: $primary-font;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+
+  text-align: center;
+}
+
+.promo::before {
+  content: "";
+  background-image: url("../../icons/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-size: 80px 80px;
+  position: absolute;
+  display: block;
+  top: 59px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
 }
