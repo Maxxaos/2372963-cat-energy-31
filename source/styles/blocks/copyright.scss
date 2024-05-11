@@ -15,9 +15,20 @@
 
 .copyright::after {
   content: "";
-  background-image: url("../../icons/logo-html.svg");
-  background-size: 27px 34px;
+  mask-image: url("../../icons/stack.svg#logo-html");
+  mask-size: 27px 34px;
+  mask-repeat: no-repeat;
+  background-color: #666666;
   width: 27px;
   height: 34px;
   display: block;
 }
+
+.copyright:hover::after {
+  background-color: $basic-green;
+}
+
+.copyright__text:active {
+  opacity: 0.3;
+}
+

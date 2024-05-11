@@ -44,7 +44,7 @@
 
 .program__title--slim::after {
   content: "";
-  background-image: url("../../icons/program/cat-slim.svg");
+  background-image: url("../../icons/stack.svg#program_cat-slim");
   background-repeat: no-repeat;
   background-size: 36px 50px;
   width: 36px;
@@ -56,7 +56,7 @@
 
 .program__title--pro::after {
   content: "";
-  background-image: url("../../icons/program/cat-pro.svg");
+  background-image: url("../../icons/stack.svg#program_cat-pro");
   background-repeat: no-repeat;
   background-size: 67px 28px;
   width: 67px;
@@ -90,7 +90,7 @@
   width: 24px;
   height: 12px;
   transition: all, all 1.3s;
-  mask-image: url("../../icons/program/icon-arrow.svg");
+  mask-image: url("../../icons/stack.svg#program_icon-arrow");
   mask-position: 100%;
   mask-size: 24px 12px;
   mask-repeat: no-repeat;
