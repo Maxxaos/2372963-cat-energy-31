@@ -6,7 +6,6 @@
   gap: 40px;
 }
 
-
 .navigation__wrapper {
   display: flex;
   justify-content: space-between;
@@ -30,10 +29,8 @@
 
 .navigation__logo {
   display: flex;
-  flex-flow: wrap;
   flex-direction: row;
   align-items: center;
-  gap: 58px;
 }
 
 .navigation__toggle {
@@ -80,3 +77,42 @@
   color: $basic-black;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .navigation {
+    flex-direction: row;
+  }
+
+  .navigation__toggle {
+    display: none;
+  }
+
+  .navigation__toggle--close {
+    display: none;
+  }
+
+  .navigation__wrapper {
+    width: 174px;
+  }
+
+  .navigation__wrapper::after {
+    content: "";
+    display: none;
+  }
+
+  .navigation__list {
+    flex-direction: row;
+    gap: 33px;
+  }
+
+  .navigation__item::after {
+    content: "";
+    display: none;
+  }
+
+  .navigation__link {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
