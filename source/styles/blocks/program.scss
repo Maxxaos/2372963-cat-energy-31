@@ -1,9 +1,6 @@
-// .program {
-//   width
-// }
+
 
 .program__list {
-  width: 280px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -11,13 +8,12 @@
 }
 
 .program__item {
-  margin: 0;
-  padding: 0;
-
   display: flex;
   flex-wrap: wrap;
   background-color: #f2f2f2;
   color: #000000;
+  padding-left: 20px;
+  padding-bottom: 18px;
 }
 
 .program__title {
@@ -62,8 +58,8 @@
   width: 67px;
   height: 28px;
   position: absolute;
-  top: 7px;
-  left: 0;
+  top: 11px;
+  left: -7px;
 }
 
 .program__desc {
@@ -81,8 +77,21 @@
   flex-flow: wrap;
   justify-content: start;
   align-items: center;
-  gap: 15px;
+  padding-top: 28px;
+  position: relative;
 }
+
+.program__link::before {
+  width: 280px;
+  height: 1px;
+  background-color: #d9d9d9;
+  content: "";
+  position: absolute;
+  display: block;
+  left: -20px;
+  top: 5px;
+}
+
 
 .program__link::after {
   content: "";

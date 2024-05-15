@@ -1,15 +1,26 @@
-.contacts__slogan {
+.contacts__wrapper {
+  justify-content: center;
+  width: 100%;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  display: flex;
+}
+
+.contacts__text {
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+  margin: 0;
+  max-width: 140px;
 }
 
 .contacts__adress {
   font-family: $primary-font;
   line-height: 20px;
   color: #444444;
+  font-style: normal;
 }
 
 .contacts__city {

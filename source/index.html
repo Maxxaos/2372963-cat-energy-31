@@ -16,21 +16,21 @@
 </head>
 
 <body class="page__body">
-  <header class="header navigation">
+  <header class="header page__wrapper">
+    <div class="header__wrapper">
+      <a class="header__logo" href="#">
+        <picture>
+          <source media="(1440px)" srcset="images/logo/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
+          <source media="(768px)" srcset="images/logo/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
+          <img class="header__image" src="images/logo/logo-mobile.svg" width="33" height="38" alt="Логотип магазина Cat Energy">
+        </picture>
+        <img class="header__text" src="images/logo/logo-text.svg" width="101" height="20" alt="Наименование магазина">
+      </a>
+      <button class="header__toggle header__toggle--close" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
     <nav class="navigation">
-      <div class="navigation__wrapper">
-        <a class="navigation__logo" href="#">
-          <picture>
-            <source media="(1440px)" srcset="images/logo/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
-            <source media="(768px)" srcset="images/logo/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
-            <img class="logo__image" src="images/logo/logo-mobile.svg" width="33" height="38" alt="Логотип магазина Cat Energy">
-          </picture>
-          <img class="logo__text" src="images/logo/logo-text.svg" width="101" height="20" alt="Наименование магазина">
-        </a>
-        <button class="navigation__toggle navigation__toggle--close" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-      </div>
       <ul class="navigation__list list-reset">
         <li class="navigation__item ">
           <a class="navigation__link" href="index.html">Главная</a>
@@ -43,11 +43,12 @@
         </li>
       </ul>
     </nav>
+    </div>
   </header>
 
   <main class="main">
-    <section class="hero">
 
+    <section class="hero page__wrapper">
       <h1 class="hero__title">Функциональное питание для котов</h1>
       <p class="hero__slogan">Занялся собой? Займись котом!</p>
       <picture>
@@ -64,7 +65,7 @@
       <a class="button hero__button" href="#">Подобрать программу</a>
     </section>
 
-    <section class="program">
+    <section class="program page__wrapper">
       <h2 class="visually-hidden">Выбор программы</h2>
       <ul class="program__list list-reset">
         <li class="program__item">
@@ -80,7 +81,7 @@
       </ul>
     </section>
 
-    <section class="advantages">
+    <section class="advantages page__wrapper">
       <h2 class="advantages__title">Как это работает</h2>
       <ul class="advantages__list list-reset">
         <li class="advantages__item advantages__item--healthy">
@@ -105,7 +106,7 @@
       </ul>
     </section>
 
-    <section class="result">
+    <section class="result page__wrapper">
       <h2 class="result__title">Живой пример</h2>
       <p class="result__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
       <ul class="result__stats-list list-reset">
@@ -147,17 +148,20 @@
       </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts page__wrapper">
       <h3 class="visually-hidden">Контакты</h3>
-      <p class="contacts__slogan">приглашаем к сотрудничеству дилеров!</p>
-      <p class="contacts__adress">ул. Большая
-        Конюшенная, д. 19/8</p>
-      <p class="contacts__city">Санкт-Петербург</p>
+      <div class="contacts__wrapper">
+        <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
+        <address class="contacts__adress">ул. Большая
+          Конюшенная, д. 19/8
+          <span class="contacts__city">Санкт-Петербург</span>
+        </address>
+      </div>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3018527812441!2d30.321759939128697!3d59.93871783731759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f6df7d3481%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sru!2sru!4v1713201377084!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer page__wrapper">
     <a class="footer__logo logo" href="#">
       <img class="logo__text--footer" width="128" height="24" src="images/logo/logo-text.svg" alt="Наименование магазина">
     </a>

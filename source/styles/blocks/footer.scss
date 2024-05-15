@@ -4,8 +4,6 @@
   background-color: #f2f2f2;
   flex-direction: column;
   justify-content: center;
-  width: 320px;
-  margin: 0 auto;
 }
 
 .footer__logo {
@@ -13,7 +11,7 @@
 }
 
 .footer__logo::after {
-  width: 320px;
+  width: 280px;
   height: 1px;
   background-color: #e6e6e6;
   content: "";
@@ -35,7 +33,7 @@
 }
 
 .footer__list::after {
-  width: 320px;
+  width: 280px;
   height: 1px;
   background-color: #e6e6e6;
   content: "";
