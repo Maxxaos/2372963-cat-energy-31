@@ -82,11 +82,8 @@
   }
 
   .hero__img {
-    // position: absolute;
-    // left: 50%;
-    // transform: translateX(-50%);
-    // top: 266px;
     margin: 0 auto;
+    display: block;
   }
 
   .hero__button {
@@ -102,3 +99,46 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .hero {
+    min-height: 580px;
+    padding-top: 110px;
+  }
+
+  .hero::before {
+    /* stylelint-disable-next-line color-hex-alpha */
+    background-image: linear-gradient(#68b738d9, #68b738d9), url("../../images/hero/cat-background@2x.jpg");
+    background-position: 0;
+    background-size: cover;
+    min-width: 50%;
+    height: 400px;
+    // min-height: calc(100% + 115px);
+    display: block;
+    top: -115px;
+    right: 0;
+    z-index: -1;
+  }
+
+  .hero__title {
+    margin: 0 0 40px 80px;
+    z-index: 1;
+  }
+
+  .hero__slogan {
+    margin-bottom: 52px;
+    margin-left: 80px;
+    z-index: 1;
+  }
+
+  .hero__img {
+    position: absolute;
+    top: 29px;
+    right: 221px;
+    translate: 0;
+  }
+
+  .hero__button {
+    margin-left: 80px;
+    position: initial;
+  }
+}

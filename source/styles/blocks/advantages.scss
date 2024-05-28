@@ -104,3 +104,15 @@
     color: #444444;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .advantages__title {
+    margin-bottom: 32px;
+  }
+
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 79px;
+  }
+}

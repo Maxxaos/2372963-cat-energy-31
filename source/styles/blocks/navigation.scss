@@ -64,6 +64,51 @@
   .navigation__link {
     font-size: 18px;
     line-height: 24px;
+    position: relative;
+  }
+
+  .navigation__link--current::after {
+    content: "";
+    background-color: #68b738;
+    height: 2px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
   }
 }
 
+@media (min-width: $desktop-width) {
+  .navigation__list {
+    max-width: 600px;
+  }
+
+  .navigation__item {
+    padding-bottom: 10px;
+  }
+
+  .navigation__link {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $basic-white;
+  }
+
+  .navigation__link--catalog {
+    color: #111111;
+  }
+
+  .navigation__link--current::after {
+    content: "";
+    background-color: $basic-white;
+    height: 2px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+  }
+
+  .navigation__link--catalog.navigation__link--current::after {
+    background-color: $basic-green;
+  }
+}

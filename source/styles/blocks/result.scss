@@ -93,3 +93,26 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .result {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .result__desc {
+    width: 436px;
+    margin-left: 0;
+  }
+
+  .result__wrapper {
+    flex-direction: column;
+  }
+
+  .result__cost {
+    margin-top: 55px;
+    flex-direction: row;
+    gap: 53px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}

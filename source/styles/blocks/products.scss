@@ -39,3 +39,10 @@
     border-bottom: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .products__list {
+    grid-template-columns: repeat(4, 245px);
+    gap: 63px 80px;
+  }
+}
