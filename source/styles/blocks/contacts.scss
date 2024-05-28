@@ -1,5 +1,5 @@
 .contacts__wrapper {
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   padding-top: 26px;
   padding-bottom: 26px;
@@ -21,10 +21,36 @@
   line-height: 20px;
   color: #444444;
   font-style: normal;
+  max-width: 140px;
 }
 
 .contacts__city {
   font-family: $primary-font;
   line-height: 20px;
   color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    width: 628px;
+    padding: 60px 40px;
+  }
+
+  .contacts__text {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+
+  .contacts__adress {
+    max-width: 157px;
+    font-size: 16px;
+    display: flex;
+    text-align: end;
+    flex-direction: column;
+  }
+
+  .contacts__city {
+    margin-top: auto;
+  }
 }

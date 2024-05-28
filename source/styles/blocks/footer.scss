@@ -8,6 +8,7 @@
 
 .footer__logo {
   position: relative;
+  margin-top: 40px;
 }
 
 .footer__logo::after {
@@ -95,4 +96,30 @@
 .footer__link:active::before {
   background-color: $basic-green;
   opacity: 0.2;
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    flex-direction: row;
+    align-items: center;
+    margin: 55px 0;
+    justify-content: space-between;
+    background-color: $basic-white;
+  }
+
+  .footer__logo {
+    margin-top: 0;
+  }
+
+  .footer__logo::after {
+    display: none;
+  }
+
+  .footer__list {
+    margin-top: 0;
+  }
+
+  .footer__list::after {
+    display: none;
+  }
 }

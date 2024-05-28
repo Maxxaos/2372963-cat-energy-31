@@ -1,5 +1,4 @@
 .navigation {
-  display: flex;
   align-items: center;
   margin-top: 38px;
 }
@@ -28,21 +27,29 @@
 }
 
 .navigation__link {
-  font-family: $primary-font;
+  font-family: $secondary-font;
   font-size: 20px;
   line-height: 20px;
   color: $basic-black;
   text-transform: uppercase;
 }
 
+.navigation--closed {
+  display: none;
+}
+
+// tablet
+
 @media (min-width: $tablet-width) {
   .navigation {
     margin: 0;
+    display: flex;
   }
 
   .navigation__list {
     flex-flow: row wrap;
-    gap: 10px;
+    gap: 33px;
+    max-width: 465px;
   }
 
   .navigation__item {

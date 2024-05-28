@@ -1,16 +1,45 @@
+.products-add__list {
+  border-top: 1px solid #cdcdcd;
+  margin: 0 0 35px;
+}
+
 .products-add__title {
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
   color: #000000;
+  margin-bottom: 36px;
+  position: relative;
+}
+
+.products-add__title::before {
+  content: "";
+  height: 2px;
+  background-color: $basic-green;
+  position: absolute;
+  width: 34px;
+  top: 12px;
+  left: 266px;
+}
+
+.products-add__item {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  border-bottom: 1px solid #cdcdcd;
+  padding-bottom: 19px;
 }
 
 .products-add__name {
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
+  font-weight: 400;
   color: #222222;
   text-transform: uppercase;
+  grid-column: 1/3;
+  display: block;
+  margin-bottom: 0;
 }
 
 .products-add__value {
@@ -18,22 +47,75 @@
   font-size: 14px;
   line-height: 14px;
   color: #444444;
+  font-weight: 400;
 }
 
 .products-add__price {
   font-family: $primary-font;
   font-size: 14px;
   line-height: 14px;
+  font-weight: 400;
   color: #444444;
+  text-align: end;
 }
 
 .products-add__button {
-  font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
   color: #ffffff;
   background-color: #68b738;
-  padding: 10px 109px;
-  border: none;
+  grid-column: 1/3;
+}
+
+@media (min-width: $tablet-width) {
+  .products-add__title {
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 400;
+    margin: 74px auto 80px 40px;
+  }
+
+  .products-add__title::after {
+    content: "";
+    height: 2px;
+    background-color: $basic-green;
+    position: absolute;
+    width: 30px;
+    left: -70px;
+    top: 14px;
+  }
+
+  .products-add__title::before {
+    width: 357px;
+    top: 14px;
+    left: 381px;
+  }
+
+  .products-add__item {
+    grid-template-columns: 1fr 1fr 93px;
+    row-gap: 26px;
+    padding: 26px 38px;
+  }
+
+  .products-add__name {
+    grid-column: 1/2;
+    margin: 0;
+  }
+
+  .products-add__value {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: end;
+    margin: 0;
+  }
+
+  .products-add__price {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .products-add__button {
+    grid-column: 1/4;
+  }
 }

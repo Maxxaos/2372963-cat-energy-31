@@ -1,20 +1,18 @@
 .promo {
-  background-color: rgba(104, 183, 56, 0.85);
-  padding: 187px 60px 43px;
+  background-color: #68b738;
+  /* stylelint-disable-next-line color-hex-alpha */
+  background-image: linear-gradient(#68b738d9, #68b738d9), url("../../images/promo/promo@2x.jpg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  flex-flow: column wrap;
   position: relative;
-}
-
-
-.promo__desc {
-  font-family: $primary-font;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-
-  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 187px;
+  padding-bottom: 43px;
 }
 
 .promo::before {
@@ -30,3 +28,36 @@
   width: 80px;
   height: 80px;
 }
+
+.promo__desc {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+@media (min-width: $tablet-width) {
+  .promo {
+    flex-direction: row;
+    justify-content: end;
+    padding: 71px 125px 69px 77px;
+    background-position-y: 60%;
+  }
+
+  .promo::before {
+    width: 80;
+    height: 82px;
+    top: 57px;
+    left: 108px;
+  }
+
+  .promo__desc {
+    max-width: 161px;
+    text-align: left;
+  }
+}
+
