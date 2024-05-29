@@ -46,6 +46,10 @@
     justify-content: end;
     padding: 71px 125px 69px 77px;
     background-position-y: 60%;
+    margin-left: 0;
+    margin-right: 0;
+    /* stylelint-disable-next-line color-hex-alpha */
+    background-image: linear-gradient(#68b738d9, #68b738d9), url("../../images/promo/promo-tab@2x.jpg");
   }
 
   .promo::before {
@@ -61,3 +65,21 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .promo {
+    align-self: flex-start;
+    justify-content: unset;
+    flex-direction: column;
+    padding: 185px 42px 42px;
+    margin: 0;
+    background-position-x: 100%;
+  }
+
+  .promo::before {
+    left: 50%;
+  }
+
+  .promo__desc {
+    text-align: center;
+  }
+}

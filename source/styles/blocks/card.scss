@@ -161,10 +161,14 @@
   }
 
   .card__more {
-    border: 2px solid #f2f2f2;
     padding-bottom: 0;
     background-size: 60px 60px;
-    background-position: 50% 50px;
+    background-position: 50% 120px;
+  }
+
+  .card__more::after {
+    background-color: $basic-white;
+    border: 2px solid #f2f2f2;
   }
 
   .card__more-title {
@@ -172,7 +176,7 @@
     line-height: 24px;
     font-weight: 400;
     margin: 0;
-    padding: 160px 0 0;
+    padding: 210px 0 0;
     max-width: 134px;
     text-align: center;
   }
@@ -183,7 +187,7 @@
     font-weight: 400;
     max-width: 170px;
     text-align: center;
-    margin: 23 auto 82px;
+    margin: 23 auto 70px;
   }
 }
 

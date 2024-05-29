@@ -7,17 +7,23 @@
   font-weight: 400;
   color: #000000;
   position: relative;
+  width: fit-content;
+  background-color: $basic-white;
+  box-shadow: -40px 0 0 0 $basic-white, 40px 0 0 0 $basic-white;
 }
 
 .subscribe__title::before {
   content: "";
+  position: absolute;
+  top: 12px;
+  right: 0;
+  width: 100vw;
   height: 2px;
   background-color: $basic-green;
-  position: absolute;
-  width: 108px;
-  top: 12px;
-  left: 192px;
+  box-shadow: 100vw 0 0 0 $basic-green;
+  z-index: -1;
 }
+
 
 .subscribe__form {
   display: flex;
@@ -69,22 +75,6 @@
     font-weight: 400;
   }
 
-  .subscribe__title::before {
-    width: 30px;
-    left: -70px;
-    top: 14px;
-  }
-
-  .subscribe__title::after {
-    content: "";
-    height: 2px;
-    background-color: $basic-green;
-    position: absolute;
-    width: 456px;
-    top: 14px;
-    left: 242px;
-  }
-
   .subscribe__desc {
     font-size: 24px;
     line-height: 32px;
@@ -97,6 +87,6 @@
   }
 
   .subscribe__input {
-    width: 376px;
+    width: 350px;
   }
 }
