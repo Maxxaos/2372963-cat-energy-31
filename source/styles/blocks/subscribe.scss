@@ -90,3 +90,19 @@
     width: 350px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .subscribe {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .subscribe__form {
+    width: 752px;
+    margin: 0 auto;
+  }
+
+  .subscribe__input {
+    width: 496px;
+  }
+}

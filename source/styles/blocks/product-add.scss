@@ -136,13 +136,13 @@
 
   .products-add__item {
     width: 896px;
-    grid-template-columns: 1fr 1fr 100px 244px;
+    grid-template-columns: 1fr 200px 100px 244px;
     padding: 15px 0;
     align-items: center;
   }
 
   .products-add__value {
-    text-align: center;
+    text-align: start;
   }
 
   .products-add__price {

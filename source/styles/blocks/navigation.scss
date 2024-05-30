@@ -34,6 +34,14 @@
   text-transform: uppercase;
 }
 
+.navigation__link:hover {
+  opacity: 0.6;
+}
+
+.navigation__link:disabled {
+  opacity: 0.3;
+}
+
 .navigation--closed {
   display: none;
 }

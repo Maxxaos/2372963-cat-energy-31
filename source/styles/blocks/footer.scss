@@ -102,9 +102,9 @@
   .footer {
     flex-direction: row;
     align-items: center;
-    margin: 55px 0;
+    padding: 55px 30px;
     justify-content: space-between;
-    background-color: $basic-white;
+    background-color: #f2f2f2;
   }
 
   .footer__logo {
@@ -121,5 +121,12 @@
 
   .footer__list::after {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }

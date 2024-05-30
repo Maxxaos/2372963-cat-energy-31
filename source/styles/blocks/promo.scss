@@ -1,7 +1,6 @@
 .promo {
   background-color: #68b738;
-  /* stylelint-disable-next-line color-hex-alpha */
-  background-image: linear-gradient(#68b738d9, #68b738d9), url("../../images/promo/promo@2x.jpg");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/promo/promo@2x.jpg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,8 +8,6 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  margin-left: 20px;
-  margin-right: 20px;
   padding-top: 187px;
   padding-bottom: 43px;
 }
@@ -48,8 +45,7 @@
     background-position-y: 60%;
     margin-left: 0;
     margin-right: 0;
-    /* stylelint-disable-next-line color-hex-alpha */
-    background-image: linear-gradient(#68b738d9, #68b738d9), url("../../images/promo/promo-tab@2x.jpg");
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/promo/promo-tab@2x.jpg");
   }
 
   .promo::before {
@@ -73,6 +69,7 @@
     padding: 185px 42px 42px;
     margin: 0;
     background-position-x: 100%;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/promo/promo@2x.jpg");
   }
 
   .promo::before {

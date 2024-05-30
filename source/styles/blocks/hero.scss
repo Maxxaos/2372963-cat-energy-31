@@ -8,8 +8,7 @@
   z-index: -1;
   content: "";
   background-color: #68b738;
-  /* stylelint-disable-next-line color-hex-alpha */
-  background-image: linear-gradient(#68b738d9, #68b738d9), url("../../images/hero/cat-background@1x.jpg"), linear-gradient(90deg, #4f4d52, #444348);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/hero/cat-background@1x.jpg"), linear-gradient(90deg, rgba(79, 77, 82, 0.85), rgba(68, 67, 72, 0.85));
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: contain;
@@ -48,6 +47,17 @@
   width: 280px;
   text-align: center;
 }
+
+.hero__button:hover {
+  background-color: #5eaa2f;
+  border: none;
+  outline: none;
+}
+
+.hero__button:active {
+  opacity: 0.3;
+}
+
 
 // tablet
 
@@ -100,17 +110,16 @@
 
 @media (min-width: $desktop-width) {
   .hero {
-    min-height: 580px;
+    min-height: 560px;
     padding-top: 110px;
   }
 
   .hero::before {
-    /* stylelint-disable-next-line color-hex-alpha */
-    background-image: linear-gradient(#68b738d9, #68b738d9), url("../../images/hero/cat-background@2x.jpg");
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/hero/cat-background@2x.jpg");
     background-position: 0;
     background-size: cover;
     min-width: 50%;
-    height: 400px;
+    height: 694px;
     // min-height: calc(100% + 115px);
     display: block;
     top: -115px;
@@ -132,7 +141,7 @@
   .hero__img {
     position: absolute;
     top: 29px;
-    right: 221px;
+    right: 331px;
     translate: 0;
   }
 
