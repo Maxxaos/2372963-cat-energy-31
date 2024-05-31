@@ -1,3 +1,10 @@
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
 .contacts__wrapper {
   justify-content: space-between;
   width: 100%;
@@ -30,6 +37,13 @@
   color: #444444;
 }
 
+.contacts__iframe {
+  width: 100%;
+  display: block;
+  border: none;
+  height: 362px;
+}
+
 @media (min-width: $tablet-width) {
   .contacts {
     margin-top: 80px;
@@ -57,5 +71,20 @@
 
   .contacts__city {
     margin-top: auto;
+  }
+
+  .contacts__iframe {
+    height: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    background-color: #ffffff;
+    width: 565px;
+    padding: 58px 75px 61px 80px;
+    position: absolute;
+    top: 95px;
+    left: 0;
   }
 }

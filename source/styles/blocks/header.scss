@@ -78,6 +78,14 @@
     margin-right: 0;
   }
 
+  .header__logo:hover {
+    opacity: 0.8;
+  }
+
+  .header__logo:active {
+    opacity: 0.6;
+  }
+
   .header__image {
     margin-right: 13px;
   }
@@ -95,5 +103,10 @@
   .header {
     padding-top: 55px;
     padding-bottom: 0;
+  }
+
+  .header__text {
+    width: 118px;
+    height: 21px;
   }
 }

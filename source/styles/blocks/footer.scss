@@ -7,20 +7,21 @@
 }
 
 .footer__logo {
-  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: center;
   margin-top: 40px;
 }
 
 .footer__logo::after {
-  width: 280px;
-  height: 1px;
-  background-color: #e6e6e6;
   content: "";
-  position: absolute;
+  background-color: #111111;
+  width: 128px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
   display: block;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 40px;
+  mask-image: url("../../icons/stack.svg#footer-logo");
 }
 
 .footer__list {
@@ -29,20 +30,10 @@
   justify-content: center;
   align-items: center;
   gap: 24px;
-  margin-top: 40px;
+  padding: 20px 0;
   position: relative;
-}
-
-.footer__list::after {
-  width: 280px;
-  height: 1px;
-  background-color: #e6e6e6;
-  content: "";
-  position: absolute;
-  display: block;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 40px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .footer__link {
@@ -108,19 +99,12 @@
   }
 
   .footer__logo {
-    margin-top: 0;
-  }
-
-  .footer__logo::after {
-    display: none;
+    margin: 0;
   }
 
   .footer__list {
     margin-top: 0;
-  }
-
-  .footer__list::after {
-    display: none;
+    border: none;
   }
 }
 

@@ -64,6 +64,11 @@
   background-color: #5eaa2f;
 }
 
+.card__button:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .card__more {
   display: flex;
   flex-flow: column nowrap;
@@ -100,6 +105,14 @@
   background-color: #f2f2f2;
   width: 240px;
   color: $basic-text-gray;
+}
+
+.card__more-button:hover {
+  background-color: #ebebeb;
+}
+
+.card__more-button:active {
+  background-color: #ebebeb;
 }
 
 @media (min-width: $tablet-width) {

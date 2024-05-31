@@ -55,12 +55,30 @@
   width: 254px;
 }
 
+.subscribe__input:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.subscribe__input:focus {
+  border: none;
+  outline: 2px solid #444444;
+}
+
 .subscribe__button {
   color: #ffffff;
   background-color: #68b738;
   width: 280px;
   font-size: 20px;
   line-height: 26px;
+}
+
+.subscribe__button:hover {
+  background-color: #5eaa2f;
+}
+
+.subscribe__button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5eaa2f;
 }
 
 @media (min-width: $tablet-width) {
