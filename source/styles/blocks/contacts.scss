@@ -1,15 +1,12 @@
 .contacts {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   position: relative;
 }
 
 .contacts__wrapper {
   justify-content: space-between;
-  width: 100%;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  width: 280px;
+  padding: 26px 20px;
   display: flex;
 }
 
@@ -37,11 +34,10 @@
   color: #444444;
 }
 
-.contacts__iframe {
-  width: 100%;
+.contacts iframe {
   display: block;
   border: none;
-  height: 362px;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -52,7 +48,7 @@
 
   .contacts__wrapper {
     width: 628px;
-    padding: 60px 40px;
+    padding: 60px 70px;
   }
 
   .contacts__text {
@@ -72,19 +68,19 @@
   .contacts__city {
     margin-top: auto;
   }
-
-  .contacts__iframe {
-    height: 400px;
-  }
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    margin-top: 0;
+  }
+
   .contacts__wrapper {
     background-color: #ffffff;
-    width: 565px;
+    width: 407px;
     padding: 58px 75px 61px 80px;
     position: absolute;
     top: 95px;
-    left: 0;
+    left: 110px;
   }
 }
