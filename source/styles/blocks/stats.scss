@@ -65,3 +65,9 @@
     padding-inline: 10px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .stats__desc {
+    background-color: #f2f2f2;
+  }
+}

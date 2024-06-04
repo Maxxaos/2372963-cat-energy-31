@@ -3,33 +3,20 @@
   align-items: center;
   display: flex;
   position: relative;
-  padding-top: 13px;
-  padding-bottom: 13px;
 }
 
 .header__wrapper {
   display: flex;
   align-items: center;
   margin: 0;
-  padding: 0;
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
-
-// .header__wrapper::after {
-//   width: 320px;
-//   height: 1px;
-//   background-color: #e6e6e6;
-//   content: "";
-//   position: absolute;
-//   display: block;
-//   left: -20px;
-//   top: 60px;
-// }
-
 
 .header__logo {
   display: flex;
   align-items: center;
-  margin-right: 70px;
+  margin-right: 64px;
 }
 
 .header__image {

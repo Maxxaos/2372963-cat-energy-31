@@ -334,7 +334,7 @@
       </form>
     </section>
 
-    <section class="contacts page__wrapper">
+    <section class="contacts">
       <h3 class="visually-hidden">Контакты</h3>
       <div class="contacts__wrapper">
         <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
@@ -343,25 +343,39 @@
           <span class="contacts__city">Санкт-Петербург</span>
         </address>
       </div>
-      <iframe class="invite__map map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A7ec1721b10638175297fe8957aca91636dc435452fa67788eafcaea6af0fbddc&amp;source=constructor"></iframe>
+      <div class="contacts__map">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5c40ab8cc834ad5131302a3477414d73b42b08ef273393e483ae1275f68a1c34&amp;source=constructor" width="320" height="362" allowfullscreen="" title="Офис компании по адресу Большая Конюшенная, д. 19/8, г. Санкт-Петербург">
+          <h4 class="visually-hidden">Магазин на карте</h4>
+        </iframe>
+        <noscript>
+          <picture>
+            <source media="(min-width: 1440px)" width="1440" height="400" type="image/webp" srcset="images/map/location-desc@1x.webp 1x, images/map/location-desc@2x.webp 2x">
+            <source media="(min-width: 768px)" width="768" height="400" type="image/webp" srcset="images/map/location-tab@1x.webp 1x, images/map/location-tab@2x.webp 2x">
+            <source width="320" height="362" type="image/webp" srcset="images/map/location-mob@1x.webp 1x, images/map/location-mob@2x.webp 2x">
+            <source media="(min-width: 1440px)" width="1440" height="400" type="image/jpg" srcset="images/map/location-desc@1x.jpg 1x, images/map/ocation-desc@2x.jpg 2x">
+            <source media="(min-width: 768px)" width="768" height="400" type="image/jpg" srcset="images/map/location-tab@1x.jpg 1x, images/map/location-tab@2x.jpg 2x">
+            <img class="contacts__img" width="320" height="362" src="images/map/location-mob@1x.jpg" srcset="images/map/location-mob@2x.jpg" alt="Карта с отмеченной локацией" loading="lazy">
+          </picture>
+        </noscript>
+      </div>
     </section>
   </main>
 
   <footer class="footer page__wrapper">
-    <a class="footer__logo logo" href="#">
-      <img class="logo__text--footer" width="128" height="24" src="images/logo/logo-text.svg" alt="Наименование магазина">
+    <a class="footer__logo" href="index.html">
+      <span class="visually-hidden">Логотип Cat Energy</span>
     </a>
     <ul class="footer__list list-reset">
       <li class="footer__item">
-        <a class="footer__link footer__link--vk" href="#"><span class="visually-hidden">Мы в контакте</span>
+        <a class="footer__link footer__link-vk" href="#"><span class="visually-hidden">Мы в контакте</span>
         </a>
       </li>
       <li class="footer__item">
-        <a class="footer__link footer__link--yt" href="#"><span class="visually-hidden">Мы в ютубе</span>
+        <a class="footer__link footer__link-yt" href="#"><span class="visually-hidden">Мы в ютубе</span>
         </a>
       </li>
       <li class="footer__item">
-        <a class="footer__link footer__link--tg" href="#"><span class="visually-hidden">Мы в телеграмм</span>
+        <a class="footer__link footer__link-tg" href="#"><span class="visually-hidden">Мы в телеграмм</span>
         </a>
       </li>
     </ul>

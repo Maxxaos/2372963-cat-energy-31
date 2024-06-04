@@ -40,12 +40,23 @@
   width: 100%;
 }
 
-@media (min-width: $tablet-width) {
-  .contacts {
-    margin-top: 80px;
-    background-color: #f2f2f2;
-  }
+.contacts__map {
+  position: relative;
+}
 
+.contacts__map::after {
+  content: "";
+  background-image: url("../../icons/stack.svg#pin");
+  background-repeat: no-repeat;
+  background-size: 56px 52px;
+  position: absolute;
+  width: 56px;
+  height: 52px;
+  top: 190px;
+  left: 130px;
+}
+
+@media (min-width: $tablet-width) {
   .contacts__wrapper {
     width: 628px;
     padding: 60px 70px;
@@ -68,11 +79,23 @@
   .contacts__city {
     margin-top: auto;
   }
+
+  .contacts__map::after {
+    background-size: 113px 106px;
+    width: 113px;
+    height: 106px;
+    left: 330px;
+    top: 136px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
     margin-top: 0;
+  }
+
+  .contacts__map::after {
+    left: 665px;
   }
 
   .contacts__wrapper {
@@ -82,5 +105,6 @@
     position: absolute;
     top: 95px;
     left: 110px;
+    z-index: 1;
   }
 }

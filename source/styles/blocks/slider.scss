@@ -61,6 +61,30 @@
   mask-repeat: no-repeat;
 }
 
+.slider__button:hover {
+  background-color: $basic-green;
+}
+
+.slider__button:hover::before {
+  border-color: $basic-green;
+}
+
+.slider__button:hover::after {
+  background-color: $basic-green;
+}
+
+.slider__button:active {
+  background-color: #5eaa2f;
+}
+
+.slider__button:active::before {
+  border-color: #5eaa2f;
+}
+
+.slider__button:active::after {
+  background-color: #5eaa2f;
+}
+
 @media (min-width: $tablet-width) {
   .slider {
     max-width: 560px;
@@ -77,5 +101,11 @@
 
   .slider__button::after {
     top: 249px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    margin: 0;
   }
 }

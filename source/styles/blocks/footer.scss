@@ -26,11 +26,11 @@
   mask-image: url("../../icons/stack.svg#footer-logo");
 }
 
-.footer__logo::before:hover {
-  opacity: 0.3;
+.footer__logo:hover::before {
+  background-color: #3e3e3e;
 }
 
-.footer__logo::before:active {
+.footer__logo:active::before {
   background-color: #6b6b6b;
 }
 
