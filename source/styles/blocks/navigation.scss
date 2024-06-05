@@ -61,6 +61,7 @@
   }
 
   .navigation__list {
+    display: flex;
     flex-flow: row;
     gap: 33px;
     width: 100%;
