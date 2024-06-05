@@ -85,7 +85,7 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-.card__more {
+.card--more {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -97,7 +97,7 @@
   padding-bottom: 22px;
 }
 
-.card__more-title {
+.card--more-title {
   color: #111111;
   font-family: $secondary-font;
   text-transform: uppercase;
@@ -108,7 +108,7 @@
   margin-top: 59px;
 }
 
-.card__more-desc {
+.card--more-desc {
   font-family: $primary-font;
   font-size: 12px;
   line-height: 16px;
@@ -118,17 +118,17 @@
   margin-top: -9px;
 }
 
-.card__more-button {
+.card--more-button {
   background-color: #f2f2f2;
   width: 240px;
   color: $basic-text-gray;
 }
 
-.card__more-button:hover {
+.card--more-button:hover {
   background-color: #ebebeb;
 }
 
-.card__more-button:active {
+.card--more-button:active {
   background-color: #ebebeb;
 }
 
@@ -199,19 +199,19 @@
     line-height: 20px;
   }
 
-  .card__more {
+  .card--more {
     padding-bottom: 40px;
     background-size: 60px 60px;
     background-position: 50% 133px;
   }
 
-  .card__more::after {
+  .card--more::after {
     background-color: $basic-white;
     border: 2px solid #f2f2f2;
     height: 425px;
   }
 
-  .card__more-title {
+  .card--more-title {
     font-size: 20px;
     line-height: 24px;
     font-weight: 400;
@@ -221,7 +221,7 @@
     text-align: center;
   }
 
-  .card__more-desc {
+  .card--more-desc {
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
@@ -230,7 +230,7 @@
     margin: 23 auto 82px;
   }
 
-  .card__more-button {
+  .card--more-button {
     width: 212px;
   }
 }
@@ -262,27 +262,27 @@
     padding-bottom: 12px;
   }
 
-  .card__more {
+  .card--more {
     border: none;
     background-position-y: 29%;
   }
 
-  .card__more::after {
+  .card--more::after {
     background-color: $basic-white;
     border: 2px solid #f2f2f2;
     height: 429px;
   }
 
-  .card__more-title {
+  .card--more-title {
     padding-top: 219px;
   }
 
-  .card__more-desc {
+  .card--more-desc {
     margin-top: 24px;
     margin-bottom: 92px;
   }
 
-  .card__more-button {
+  .card--more-button {
     width: 129px;
   }
 
