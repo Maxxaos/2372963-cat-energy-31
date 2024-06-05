@@ -1,7 +1,7 @@
 .navigation__list {
-  display: flex;
   width: 320px;
   flex-direction: column;
+  display: none;
 }
 
 .navigation__item {
@@ -29,9 +29,6 @@
   opacity: 0.3;
 }
 
-.navigation__list {
-  display: none;
-}
 
 // @media (max-width: $mobile-width-only) {
 //   .navigation--closed .navigation__list {
