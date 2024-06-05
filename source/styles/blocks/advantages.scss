@@ -2,6 +2,7 @@
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
+
   font-weight: 400;
   color: #000000;
   margin-top: 20px;
@@ -14,11 +15,13 @@
   row-gap: 20px;
   counter-reset: advantages 0;
   padding-bottom: 49px;
+
 }
 
 .advantages__item {
   font-family: $primary-font;
   color: #444444;
+
   display: flex;
   align-items: center;
   flex-flow: nowrap;
@@ -127,4 +130,5 @@
     grid-template-columns: repeat(4, 1fr);
     column-gap: 79px;
   }
+
 }

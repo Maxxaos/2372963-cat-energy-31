@@ -1,4 +1,5 @@
 .hero {
+
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -15,12 +16,14 @@
   min-width: 100%;
   min-height: 302px;
   position: absolute;
+
 }
 
 .hero__title {
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 36px;
+
   font-weight: 400;
   color: $basic-white;
   text-align: center;
@@ -148,4 +151,5 @@
     margin-left: 80px;
     position: initial;
   }
+
 }

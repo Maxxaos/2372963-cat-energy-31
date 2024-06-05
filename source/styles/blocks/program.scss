@@ -1,5 +1,6 @@
 
 
+
 .program__list {
   display: flex;
   flex-flow: column wrap;
@@ -51,6 +52,7 @@
   font-family: $primary-font;
   margin: 0 0 22px;
   width: 227px;
+
 }
 
 .program__link {
@@ -237,4 +239,5 @@
   .program__link--pro::after {
     margin-left: 25px;
   }
+
 }

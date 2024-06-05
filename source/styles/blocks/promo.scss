@@ -1,3 +1,4 @@
+
 .promo {
   background-color: #68b738;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/promo/promo@2x.jpg");
@@ -25,6 +26,7 @@
   width: 80px;
   height: 80px;
 }
+
 
 .promo__desc {
   font-family: $primary-font;
@@ -80,4 +82,5 @@
     text-align: center;
     width: 161px;
   }
+
 }

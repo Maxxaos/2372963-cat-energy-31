@@ -1,3 +1,4 @@
+
 .navigation__list {
   width: 320px;
   flex-direction: column;
@@ -131,4 +132,5 @@
   .navigation__link--catalog.navigation__link--current::after {
     background-color: $basic-green;
   }
+
 }
