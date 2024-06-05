@@ -13,6 +13,7 @@
   flex-flow: wrap;
   row-gap: 20px;
   counter-reset: advantages 0;
+  padding-bottom: 49px;
 }
 
 .advantages__item {
@@ -71,18 +72,22 @@
     line-height: 60px;
     font-weight: 400;
     margin-top: 45px;
+    padding-bottom: 0;
+    margin-bottom: 70px;
   }
 
   .advantages__list {
-    flex-direction: row;
-    column-gap: 153px;
+    flex-flow: row wrap;
+    gap: 38px 140px;
+    padding-bottom: 6px;
   }
 
   .advantages__item {
     flex-flow: column wrap;
-    width: 230px;
+    width: 245px;
     height: 280px;
     align-items: start;
+    gap: 32px;
   }
 
   .advantages__item::before {
@@ -100,7 +105,7 @@
     line-height: 280px;
     position: absolute;
     top: -38px;
-    left: 118px;
+    left: 115px;
   }
 
   .advantages__desc {
@@ -108,12 +113,13 @@
     line-height: 24px;
     font-weight: 400;
     color: #444444;
+    min-width: 243px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages__title {
-    margin-bottom: 32px;
+    margin: 73px 0;
   }
 
   .advantages__list {

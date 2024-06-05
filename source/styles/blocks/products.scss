@@ -1,5 +1,5 @@
 .products {
-  padding-top: 27px;
+  padding-top: 28px;
 }
 
 .products__title {
@@ -8,7 +8,7 @@
   line-height: 36px;
   font-weight: 400;
   color: $basic-black;
-  margin: 0 0 42px;
+  margin: 0 0 41px;
 }
 
 .products__list {
@@ -31,6 +31,7 @@
     line-height: 60px;
     font-weight: 400;
     margin-bottom: 84px;
+    margin-top: 10px;
   }
 
   .products__list {
@@ -47,6 +48,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .products__title {
+    margin-top: 34px;
+  }
+
   .products__list {
     grid-template-columns: repeat(4, 245px);
     gap: 63px 80px;

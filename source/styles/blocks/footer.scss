@@ -9,7 +9,7 @@
 .footer__logo {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   justify-content: center;
   margin-top: 40px;
 }
@@ -103,7 +103,7 @@
   .footer {
     flex-direction: row;
     align-items: center;
-    padding: 55px 30px;
+    padding: 42px 30px 55px;
     justify-content: space-between;
     background-color: #f2f2f2;
   }
@@ -115,6 +115,8 @@
   .footer__list {
     margin-top: 0;
     border: none;
+    padding-left: 34px;
+    padding-top: 21px;
   }
 }
 
@@ -122,5 +124,6 @@
   .footer {
     padding-left: 110px;
     padding-right: 110px;
+    padding-top: 51px;
   }
 }

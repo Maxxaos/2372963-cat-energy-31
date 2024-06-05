@@ -31,7 +31,7 @@
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  margin: 0;
+  margin: -1px 1px 0 0;
   font-weight: 400;
   text-align: center;
 }
@@ -51,8 +51,8 @@
   .promo::before {
     width: 80;
     height: 82px;
-    top: 57px;
-    left: 108px;
+    top: 58px;
+    left: 118px;
   }
 
   .promo__desc {
@@ -78,5 +78,6 @@
 
   .promo__desc {
     text-align: center;
+    width: 161px;
   }
 }
