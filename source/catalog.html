@@ -9,6 +9,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
   <link rel="manifest" href="/source/manifest.webmanifest">
+  <link rel="preload" href="styles/styles.css" as="style">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="styles/styles.css">
@@ -327,8 +330,8 @@
       <p class="subscribe__desc">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
       <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="subscribe__label">
-          <span class="visually-hidden">Ваш e-mail</span>
           <input class="subscribe__input" type="email" name="email" placeholder="кuklachev@gmail.com" required>
+          <span class="visually-hidden">Ваш e-mail</span>
         </label>
         <button class="subscribe__button button" type="submit">Подписаться</button>
       </form>
@@ -336,7 +339,7 @@
 
     <section class="contacts">
       <h3 class="visually-hidden">Контакты</h3>
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper contacts__wrapper--catalog">
         <p class="contacts__text">приглашаем <br>к сотрудничеству дилеров!</p>
         <address class="contacts__adress">ул. Большая
           Конюшенная, д. 19/8

@@ -59,11 +59,14 @@
     display: flex;
     margin: 0;
     margin-right: 6px;
+    position: absolute;
+    right: 36px;
   }
 
   .navigation__list {
     display: flex;
     flex-flow: row;
+    flex-wrap: wrap;
     gap: 33px;
     width: 100%;
     max-width: 465px;
@@ -71,7 +74,6 @@
 
   .navigation__item {
     border-top: none;
-    width: none;
   }
 
   .navigation__link {
@@ -95,6 +97,7 @@
 @media (min-width: $desktop-width) {
   .navigation {
     margin-right: 0;
+    right: 111px;
   }
 
   .navigation__list {
@@ -132,5 +135,4 @@
   .navigation__link--catalog.navigation__link--current::after {
     background-color: $basic-green;
   }
-
 }
