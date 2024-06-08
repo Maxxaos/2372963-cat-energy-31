@@ -151,7 +151,7 @@
   }
 
   .products-add__title {
-    margin-top: 71px;
+    margin-top: 70px;
     font-size: 40px;
     line-height: 40px;
     margin-left: 0;
@@ -169,17 +169,23 @@
 
   .products-add__item {
     width: 896px;
-    grid-template-columns: 1fr 200px 125px 244px;
+    grid-template-columns: 1fr 200px 127px 244px;
     padding: 15px 0;
     align-items: center;
   }
 
+  .products-add__name {
+    padding-bottom: 1px;
+  }
+
   .products-add__value {
     text-align: start;
+    padding-top: 4px;
   }
 
   .products-add__price {
     text-align: center;
+    padding-top: 2px;
   }
 
   .products-add__button {
