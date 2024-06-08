@@ -66,11 +66,6 @@
 // tablet
 
 @media (min-width: $tablet-width) {
-  // .hero {
-
-  //   position: relative;
-  // }
-
   .hero::before {
     display: none;
   }
