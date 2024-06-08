@@ -184,7 +184,7 @@
 }
 
 
-.footer__link-vk::before {
+.footer__link--vk::before {
   content: "";
   mask-image: url("../../icons/stack.svg#social_vkontakte");
   mask-size: 28px 22px;
@@ -196,7 +196,7 @@
 }
 
 
-.footer__link-yt::before {
+.footer__link--yt::before {
   content: "";
   mask-image: url("../../icons/stack.svg#social_youtube");
   mask-size: 28px 22px;
@@ -208,7 +208,7 @@
 }
 
 
-.footer__link-tg::before {
+.footer__link--tg::before {
   content: "";
   mask-image: url("../../icons/stack.svg#social_telegram");
   mask-size: 28px 22px;
